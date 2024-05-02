@@ -33,6 +33,7 @@ public class SecurityConfig {
         this.rsaKey = Jwks.generateRsa();
     }
 
+
     @Bean
     public AuthenticationManager authManager(
             UserDetailsService userDetailsService) {
